@@ -17,8 +17,8 @@ public:
     - name: public
     - ports:
       - 80/tcp
-	  - 8080/tcp
-	  - 3306/tcp
+      - 8080/tcp
+      - 3306/tcp
 
 #PRENESEMO SPREMENJEN CONF FILE, zamenjan port
 prvi:
