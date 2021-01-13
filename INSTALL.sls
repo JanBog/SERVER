@@ -11,7 +11,7 @@ httpd:
   pkg:
     - installed
 
-#ODPREMO PORTE	
+#ODPREMO PORTE
 public:
   firewalld.present:
     - name: public
