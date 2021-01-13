@@ -3,7 +3,7 @@ nginx:
   pkg:
     - installed
 	
-prvi:
+mysql:
   cmd.run:
     - name: 'sudo yum install mysql-server -y'
 	
