@@ -1,14 +1,14 @@
-prva:
-  cmd.run:
-    - name: 'sudo yum install epel-release'
-
+#NAMESTIMO PACKAGE
 nginx:
   pkg:
     - installed
-  service.running:
-    - watch:
-      - pkg: nginx
+	
+#ZAŽENEMO IN USTVARIMO STARTUP-SERVICE
+drugi:
+  cmd.run:
+    - name: 'systemctl enable --now nginx'
 
+#ODPREMO PORT
 public:
   firewalld.present:
     - name: public
