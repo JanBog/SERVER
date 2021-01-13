@@ -2,15 +2,15 @@
 nginx:
   pkg:
     - installed
-	
+    
 mysql:
   cmd.run:
     - name: 'sudo yum install mysql-server -y'
-	
+    
 httpd:
   pkg:
     - installed
-
+    
 #ODPREMO PORTE
 public:
   firewalld.present:
@@ -30,7 +30,7 @@ prvi:
 prvi:
   cmd.run:
     - name: 'systemctl enable --now nginx'
-	
+
 drugi:
   cmd.run:
     - name: 'systemctl enable --now mysqld'
@@ -38,4 +38,3 @@ drugi:
 tretji:
   cmd.run:
     - name: 'systemctl enable --now httpd'
-	
