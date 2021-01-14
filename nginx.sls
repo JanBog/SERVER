@@ -8,6 +8,7 @@ drugi:
   cmd.run:
     - name: 'systemctl enable --now nginx'
 
+#ODPREMO PORTE
 public:
   firewalld.present:
     - name: public
